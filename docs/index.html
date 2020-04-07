@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Introduction à Git</title>
+
+    <link rel="shortcut icon" href="/formation-git/favicon.png" />
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/white.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="diaporama/agate.css" />
+
+    <!-- Style des diapos -->
+    <link rel="stylesheet" href="diaporama/slides.css" />
+    <link rel="stylesheet" href="diaporama/icons/icons.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides icon-color">
+        <section class="main-title">
+          <h1>Formation Git de base</h1>
+          <h3>Maîtriser les bases de l’utilisation de Git</h3>
+          <p>
+            <small>Laurent Caouissin</small>
+          </p>
+          <table>
+            <tr>
+              <td>
+                <a href="https://git-scm.com/">
+                  <img src="images/logo-git.png" style="width: 100px;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://git.stable.innovation.insee.eu">
+                  <img src="images/logo-gitlab.png" style="width: 100px;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://desktop.github.com">
+                  <img
+                    src="images/githubdesktop-logo.png"
+                    style="width: 100px"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="right small">
+            <a
+              href="?print-pdf#/"
+              class="icon print"
+              title="Imprimer avec Chrome"
+            ></a>
+          </p>
+
+          <p></p>
+        </section>
+
+        <section
+          data-markdown="diaporama/chapitre-01.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-02.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-03.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-04.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-05.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-06.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section
+          data-markdown="diaporama/chapitre-07.md"
+          data-separator="^---+$"
+          data-separator-vertical="^%%%+$"
+          data-separator-vertical="^%%%+$"
+        ></section>
+
+        <section class="main-title">
+          <img src="images/logo-git.png" style="width: 200px" />
+          <h2>Merci de votre attention</h2>
+          <h3>
+            <small
+              ><a href="mailto:laurent.caouissin@insee.fr?Subject=[Aide Git]"
+                >laurent.caouissin@insee.fr</a
+              ></small
+            >
+          </h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          // { src: 'plugin/notes/notes.js', async: true },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+      Reveal.configure({
+        // Slide number formatting can be configured using these variables:
+        // "h.v": horizontal . vertical slide number (default)
+        // "h/v": horizontal / vertical slide number
+        // "c": flattened slide number
+        // "c/t": flattened slide number / total slides
+        slideNumber: "c/t",
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Transition style
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: "default", // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: "fade", // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: true
+      });
+    </script>
+  </body>
+</html>
